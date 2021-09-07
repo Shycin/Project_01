@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+:root
+{
+    --main-color: #0065FC;
+    --main-light-color: #DEEBFF;
+
+    --secondary-color: #F2F2F2;
+}
+
+body
+{
+    font-family: "Raleway";
+}
