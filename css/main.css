@@ -25,3 +25,137 @@ a
     color: black;
     text-decoration: none;
 }
+
+.hidden
+{
+    display: none;
+}
+
+
+main
+{
+    margin: 0 22px;
+}
+
+main section h1
+{
+    font-size: 21px;
+}
+
+section
+{
+    margin-top: 32px;
+}
+
+section#select_localisation .point
+{
+    padding: 16px 20px;
+
+    background-color: var(--secondary-color);
+
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+
+    cursor: pointer;
+}
+
+section#select_localisation label
+{
+    padding: 14px 84px 13px 17px;
+    border: 1px solid var(--secondary-color);
+
+    cursor: text;
+}
+
+section#select_localisation .search
+{
+    padding: 16px;
+
+    background-color: var(--main-color);
+    color: white;
+
+    border-radius: 30%;
+
+    margin-left: -17px;
+
+    cursor: pointer;
+}
+
+
+
+section article
+{
+    float: left;
+    margin: 0 6px 13px 0;
+}
+
+section article label
+{
+    display: flex;
+    border: 2px solid var(--secondary-color);
+    border-radius: 90px;
+}
+
+section article label span
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    font-weight: bold;
+}
+
+section article label span.icon
+{
+    width: 50px;
+    height: 50px;
+
+    outline: 2px solid var(--main-light-color);
+
+    background-color: var(--main-light-color);
+    color: var(--main-color);
+
+    border-radius: 90px;
+}
+section article label span.desc
+{
+    padding: 0 15px 0 10px;
+}
+
+section#filter article input:checked ~ label
+{
+    outline: 1px solid var(--main-color);
+}
+section#filter article input:checked ~ label .desc
+{
+    color: var(--main-color);
+}
+
+
+section#filter>span
+{
+    margin-top: 24px;
+    float: left;
+}
+section#filter span .info_bulle
+{
+    float: left;
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--main-color);
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 90px;
+
+    margin-right: 9px;
+}
+
