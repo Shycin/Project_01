@@ -26,17 +26,8 @@ header nav ul li:not(#connection)
 {
     width: 50%;
     text-align: center;
-
-    border-bottom: 3px solid var(--secondary-color);
-
-    padding-bottom: 13px;
 }
 
-header nav ul li:not(#connection):hover
-{
-    border-bottom-color: var(--main-color);
-    
-}
 header nav ul li:not(#connection):hover a
 {
     color: var(--main-color) !important;
@@ -54,4 +45,23 @@ header nav ul li#connection
 
     color: var(--main-color);
     font-weight: bold;
+}
+
+
+
+header nav ul li label
+{
+    width: 100%;
+    display: inline-block;
+
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 13px;
+
+    cursor: pointer;
+}
+
+header nav ul li label:hover, header nav ul li input:checked ~ label
+{
+    color: var(--main-color) !important;
+    border-bottom-color: var(--main-color);
 }
