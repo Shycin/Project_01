@@ -68,6 +68,8 @@ section
 
 #select_localisation input
 {
+    font-size: 16px;
+
     padding: 0px 20px;
     border: 1px solid var(--secondary-color);
 
@@ -112,6 +114,8 @@ section div label
     border-radius: 90px;
     -webkit-border-radius: 90px;
     -moz-border-radius: 90px;
+
+    cursor: pointer;
 }
 
 section div label span

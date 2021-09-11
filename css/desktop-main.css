@@ -1,0 +1,108 @@
+@media screen and (min-width:1440px) {
+    
+    body
+    {
+        margin: 0 50px;
+    }
+
+    main
+    {
+        margin: 0;
+    }
+
+    section#description #select_localisation .search
+    {
+        border-radius: 0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    section#description #select_localisation .search:before
+    {
+        content: "Rechercher";
+        font-family: "Raleway";
+        font-weight: 600;
+    }
+
+
+
+
+    section#filter
+    {
+        display: flex;
+
+        height: 150px;
+        margin-bottom: 0;
+    }
+    section#filter>div
+    {
+        margin-left: 24px;
+    }
+    section#filter>div .icon
+    {
+        font-size: 18px;
+    }
+    section#filter>span
+    {
+        position: absolute;
+        margin-top: 90px;
+    }
+
+
+
+    section#most_popular
+    {
+        position: absolute;
+        width: 25%;
+        height: 600px;
+        left: 70%;
+
+        border-radius: 20px;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+
+    section#hebergements
+    {
+        position: absolute;
+        width: 60%;
+        height: 600px;
+
+        margin: 0px;
+        padding: 20px;
+
+        background-color: var(--secondary-color);
+
+        border-radius: 20px;
+    }
+    section#hebergements article
+    {
+        width: 30%;
+        float: left;
+
+        padding: 5px;
+
+        margin-right: 18px;
+        margin-bottom: 30px;
+    }
+
+    section#hebergements article .image-rognage-horizontal
+    {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+
+
+    section#activites
+    {
+        margin-top: 680px;
+    }
+
+}
