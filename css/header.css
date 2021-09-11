@@ -60,7 +60,7 @@ header nav ul li label
     cursor: pointer;
 }
 
-header nav ul li label:hover, header nav ul li input:checked ~ label
+header nav ul li label:hover, header nav ul li input:checked ~ label, header nav ul li input:checked ~ label a
 {
     color: var(--main-color) !important;
     border-bottom-color: var(--main-color);
