@@ -24,6 +24,7 @@ a
 {
     color: black;
     text-decoration: none;
+    display: block;
 }
 
 .hidden
@@ -47,7 +48,13 @@ section
     margin-top: 32px;
 }
 
-section#select_localisation .point
+#select_localisation
+{
+    float: none;
+    display: flex;
+}
+
+#select_localisation .point
 {
     padding: 16px 20px;
 
@@ -59,15 +66,19 @@ section#select_localisation .point
     cursor: pointer;
 }
 
-section#select_localisation label
+#select_localisation span
 {
-    padding: 14px 84px 13px 17px;
+    padding: 0px 84px 0px 17px;
     border: 1px solid var(--secondary-color);
 
     cursor: text;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-section#select_localisation .search
+#select_localisation .search
 {
     padding: 16px;
 
@@ -83,20 +94,20 @@ section#select_localisation .search
 
 
 
-section article
+section div
 {
     float: left;
     margin: 0 6px 13px 0;
 }
 
-section article label
+section div label
 {
     display: flex;
     border: 2px solid var(--secondary-color);
     border-radius: 90px;
 }
 
-section article label span
+section div label span
 {
     display: flex;
     flex-direction: column;
@@ -106,7 +117,7 @@ section article label span
     font-weight: bold;
 }
 
-section article label span.icon
+section div label span.icon
 {
     width: 50px;
     height: 50px;
@@ -118,7 +129,7 @@ section article label span.icon
 
     border-radius: 90px;
 }
-section article label span.desc
+section div label span.desc
 {
     padding: 0 15px 0 10px;
 }
@@ -128,11 +139,11 @@ section#filter
     height: 320px;
     margin-bottom: 40px;
 }
-section#filter article input:checked ~ label
+section#filter div input:checked ~ label
 {
     outline: 1px solid var(--main-color);
 }
-section#filter article input:checked ~ label .desc
+section#filter div input:checked ~ label .desc
 {
     color: var(--main-color);
 }
@@ -169,6 +180,8 @@ section#filter span .info_bulle
 
 section#most_popular
 {
+    height: 550px;
+
     margin: 0 -22px;
     padding: 30px 20px;
 
@@ -186,12 +199,12 @@ section#most_popular article
     width: 100%;
 
     border-radius: 20px;
+
+    display: flex;
 }
 
 section#most_popular article>div
 {
-    display: flex;
-
     margin: 5px;
 }
 
@@ -199,9 +212,40 @@ section#most_popular article>div>img
 {
     width: 200px;
     height: 150px;
-    margin-left: -40;
+    margin-left: -30;
     margin-top: -5px;
 }
+section#most_popular article>.desc 
+{
+    margin-left: 10px;
+    margin-right: 10px;
+
+    width: 150px;
+}
+section#most_popular article>.desc>h4 
+{
+    margin: 10px 0;
+}
+section#most_popular article>.desc>p 
+{
+    font-size: 14px;
+}
+
+.like
+{
+    color: var(--main-color);
+    font-size: 12px;
+    margin-top: 35px;
+}
+.like-4 .fas:nth-child(1n+5)
+{
+    color: var(--secondary-color);
+}
+.like-3 .fas:nth-child(1n+4)
+{
+    color: var(--secondary-color);
+}
+
 
 .image-rognage {
     position: relative;
@@ -212,4 +256,39 @@ section#most_popular article>div>img
     
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+
+
+section#hebergements
+{
+    height: 550px;
+
+    margin: 0 -22px;
+    padding: 30px 20px;
+}
+
+section#hebergements article
+{
+    background-color: white;
+    width: 100%;
+
+    border-radius: 20px;
+}
+
+section#hebergements article>div>img 
+{
+    height: 250px;
+    margin-top: -60px;
+}
+
+.image-rognage-horizontal {
+    position: relative;
+    width: 325px;
+    height: 134px;
+    overflow: hidden;
+
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
