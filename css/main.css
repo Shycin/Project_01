@@ -86,6 +86,8 @@ section
     color: white;
 
     border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
 
     margin-left: -17px;
 
@@ -105,6 +107,8 @@ section div label
     display: flex;
     border: 2px solid var(--secondary-color);
     border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
 }
 
 section div label span
@@ -122,12 +126,12 @@ section div label span.icon
     width: 50px;
     height: 50px;
 
-    outline: 2px solid var(--main-light-color);
-
     background-color: var(--main-light-color);
     color: var(--main-color);
 
     border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
 }
 section div label span.desc
 {
@@ -171,6 +175,8 @@ section#filter span .info_bulle
 
     border: 1px solid var(--secondary-color);
     border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
 
     margin-right: 9px;
 }
@@ -199,6 +205,8 @@ section#most_popular article
     width: 100%;
 
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
 
     display: flex;
 
@@ -285,6 +293,8 @@ section#hebergements article
     width: 100%;
 
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
 
     height: 215px;
 
@@ -315,6 +325,8 @@ section#activites article
     height: 190px;
     box-shadow: 0px 0px 10px lightgrey;
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
 
     margin-bottom: 25px;
 }
