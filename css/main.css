@@ -66,9 +66,9 @@ section
     cursor: pointer;
 }
 
-#select_localisation span
+#select_localisation input
 {
-    padding: 0px 84px 0px 17px;
+    padding: 0px 20px;
     border: 1px solid var(--secondary-color);
 
     cursor: text;
@@ -77,7 +77,10 @@ section
     justify-content: center;
     flex-direction: column;
 }
-
+#select_localisation input:focus-visible 
+{
+    outline: none;
+}
 #select_localisation .search
 {
     padding: 16px;
@@ -129,6 +132,8 @@ section div label span.icon
     background-color: var(--main-light-color);
     color: var(--main-color);
 
+    box-shadow: 0 0 0 1pt var(--main-light-color);
+
     border-radius: 90px;
     -webkit-border-radius: 90px;
     -moz-border-radius: 90px;
@@ -145,11 +150,20 @@ section#filter
 }
 section#filter div input:checked ~ label
 {
-    outline: 1px solid var(--main-color);
+    border: 1px solid var(--main-color);
+}
+section#filter div input:checked ~ label span.icon
+{
+    box-shadow: 0 0 0 1pt var(--main-color);
 }
 section#filter div input:checked ~ label .desc
 {
     color: var(--main-color);
+}
+section#filter div input:not(:checked) ~ label:hover
+{
+    background-color: var(--main-color);
+    color: white;
 }
 
 
