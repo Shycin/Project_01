@@ -49,13 +49,18 @@
     }
 
 
+    section#most_popular h3, section#hebergements h3
+    {
+        font-size: 21px;
+    }
+
 
     section#most_popular
     {
         position: absolute;
-        width: 25%;
-        height: 600px;
-        left: 70%;
+        width: 23%;
+        height: 620px;
+        left: 73%;
 
         border-radius: 20px;
         padding: 20px;
@@ -71,14 +76,18 @@
     {
         position: absolute;
         width: 60%;
-        height: 600px;
+        height: 620px;
 
         margin: 0px;
-        padding: 20px;
+        padding: 20px 35px;
 
         background-color: var(--secondary-color);
 
         border-radius: 20px;
+    }
+    section#hebergements .more
+    {
+        margin-top: 0;
     }
     section#hebergements article
     {
@@ -102,7 +111,79 @@
 
     section#activites
     {
-        margin-top: 680px;
+        margin-top: 700px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto 40px auto;
+        gap: 0px 0px;
+        grid-template-areas: 
+        "title title title title" 
+        "d1 d2 d4 d5"
+        "d1 d2 d4 d6"
+        "d1 d3 d4 d6";
     }
+
+
+    section#activites h3
+    {
+        grid-area: title;
+    }
+    section#activites article
+    {
+        height: auto;
+        max-height: 450px;
+        padding:0;
+    }
+    section#activites article, section#activites article .image-rognage-horizontal
+    {
+        width: 300px;
+    }
+    section#activites article .image-rognage-horizontal
+    {
+        height: 70%;
+        margin: 0;
+    }
+    section#activites article:nth-child(2)
+    {
+        grid-area: d1;
+    }
+    section#activites article:nth-child(2) img, section#activites article:nth-child(5) img
+    {
+        height: 110%;
+        width: 200%;
+        margin-left: -50%;
+    }
+    section#activites article:nth-child(2) .image-rognage-horizontal, section#activites article:nth-child(5) .image-rognage-horizontal
+    {
+        height: 88%;
+    }
+    section#activites article:nth-child(3)
+    {
+        grid-area: d2;
+        height: 236px;
+        margin-bottom: 20px;
+    }
+    section#activites article:nth-child(4)
+    {
+        grid-area: d3;
+        height: 165px;
+    }
+    section#activites article:nth-child(5)
+    {
+        grid-area: d4;
+    }
+    section#activites article:nth-child(6)
+    {
+        grid-area: d5;
+        height: 195px;
+        margin-bottom: 20px;
+    }
+    section#activites article:nth-child(7)
+    {
+        grid-area: d6;
+        height: 210px;
+    }
+
 
 }

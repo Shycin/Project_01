@@ -1,0 +1,23 @@
+@media screen and (min-width:1440px) {
+    
+
+    footer
+    {
+        margin-top: 50px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    footer nav
+    {
+        display: flex;
+    }
+
+    footer ul
+    {
+        margin-right: auto;
+    }
+
+}
+
