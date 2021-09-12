@@ -66,8 +66,3 @@ header nav ul li label:hover, header nav ul li input:checked ~ label, header nav
     color: var(--main-color) !important;
     border-bottom-color: var(--main-color);
 }
-
-main section#hebergements:target
-{
-    background-color: red;
-}
