@@ -115,8 +115,8 @@
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto 40px auto;
-        gap: 0px 0px;
+        grid-template-rows: auto;
+        gap: 40px;
         grid-template-areas: 
         "title title title title" 
         "d1 d2 d4 d5"
@@ -134,10 +134,11 @@
         height: auto;
         max-height: 450px;
         padding:0;
+        margin-bottom: 0;
     }
     section#activites article, section#activites article .image-rognage-horizontal
     {
-        width: 300px;
+        width: 100%;
     }
     section#activites article .image-rognage-horizontal
     {
@@ -162,7 +163,6 @@
     {
         grid-area: d2;
         height: 236px;
-        margin-bottom: 20px;
     }
     section#activites article:nth-child(4)
     {
@@ -177,7 +177,6 @@
     {
         grid-area: d5;
         height: 195px;
-        margin-bottom: 20px;
     }
     section#activites article:nth-child(7)
     {
