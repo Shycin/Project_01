@@ -310,7 +310,6 @@ section#hebergements
 section#hebergements article
 {
     background-color: white;
-    width: 325px;
 
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -385,7 +384,7 @@ section#activites article .desc
     border-top-right-radius: 20px;
 }
 
-section#activites .image-rognage-horizontal
+section#activites .image-rognage-horizontal, section#hebergements .image-rognage-horizontal
 {
     width: 100%;
 }
@@ -395,7 +394,7 @@ section#hebergements .image-default
 {
     height: 250px;
     margin-top: -60px;
-    min-width: 100%;
+    width: 100%;
 }
 section#hebergements .image-square
 {
