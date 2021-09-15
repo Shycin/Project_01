@@ -1,4 +1,4 @@
-@media screen and (min-width:720px) and (max-width:1440px) {
+@media screen and (min-width:720px) and (max-width:1439px) {
 
     section#filter>span
     {
@@ -137,7 +137,7 @@
 
 }
 
-@media screen and (min-width:992px) and (max-width:1440px) {
+@media screen and (min-width:992px) and (max-width:1439px) {
 
     section#most_popular
     {

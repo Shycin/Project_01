@@ -245,11 +245,6 @@ section#most_popular article>div
 
 section#most_popular article>div>img.horizontal 
 {
-    /*width: 200px;
-    height: 150px;
-    margin-left: -30;
-    margin-top: -5px;
-*/
     width: 150%;
     height: inherit;
     margin-left: -25%;
@@ -348,7 +343,6 @@ section#activites
 }
 section#activites article
 {
-    width: 325px;
     height: 200px;
     box-shadow: 0px 0px 10px lightgrey;
     border-radius: 20px;
@@ -389,8 +383,11 @@ section#activites article .desc
     
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-/* 
-    margin: 5px; */
+}
+
+section#activites .image-rognage-horizontal
+{
+    width: 100%;
 }
 
 
