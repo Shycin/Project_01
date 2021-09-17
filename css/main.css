@@ -254,7 +254,7 @@ section#most_popular article>div
 section#most_popular article>div>img.horizontal 
 {
     width: 150%;
-    height: inherit;
+    height: 100%;
     margin-left: -25%;
 }
 section#most_popular article>div>img.vertical 
@@ -299,7 +299,6 @@ section#most_popular article>.desc>p
 .image-rognage {
     position: relative;
     width: 127px;
-    height: 134px;
     overflow: hidden;
 
     
