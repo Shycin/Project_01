@@ -60,10 +60,11 @@
         position: absolute;
         width: 23%;
         height: 620px;
-        left: 73%;
+        left: calc(73% - 20px*2);
 
         border-radius: 20px;
         padding: 20px;
+        margin-left: 25px;
 
         display: flex;
         flex-direction: column;
@@ -75,10 +76,11 @@
     section#hebergements
     {
         position: absolute;
-        width: 60%;
+        width: calc(65% - 35px*2);
         height: 620px;
 
         padding: 20px 35px;
+        margin: 0;
 
         background-color: var(--secondary-color);
 
