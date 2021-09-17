@@ -1,4 +1,4 @@
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
     
     body
     {
@@ -78,7 +78,6 @@
         width: 60%;
         height: 620px;
 
-        margin: 0px;
         padding: 20px 35px;
 
         background-color: var(--secondary-color);
@@ -87,11 +86,11 @@
     }
     section#hebergements .more
     {
-        margin-top: 0;
+        margin-top: 10px;
     }
     section#hebergements article
     {
-        width: 30%;
+        width: calc(100% / 3 - (42px * 2 / 3));
         float: left;
 
         padding: 5px;
@@ -104,7 +103,17 @@
     {
         width: 100%;
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    section#hebergements .image-horizontaly 
+    {
+        height: 100%;
+    }
+
+    section#hebergements .image-square 
+    {
+        margin-top: 0;
     }
     
 

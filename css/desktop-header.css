@@ -1,4 +1,4 @@
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
     
     header
     {
@@ -24,7 +24,14 @@
     header nav ul li {
         padding-top: 50px;
     }
-    header nav ul li:hover {
+    header nav ul li:not(#connection):hover {
+        border-top: 1px solid var(--main-color);
+    }
+    header nav ul:not(:hover) li:first-child {
+        border-top: 1px solid var(--main-color);
+    }
+    nav ul li input:checked ~ li
+    {
         border-top: 1px solid var(--main-color);
     }
 
