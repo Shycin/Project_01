@@ -1,14 +1,27 @@
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1200px) {
     
     body
     {
-        margin: 0 50px;
+        margin: 0 auto;
+        max-width: 2000px;
     }
 
     main
     {
-        margin: 0;
+        margin: 0 50px;
     }
+
+
+    .alignement
+    {
+        display: flex;
+    }
+
+    .image-rognage-horizontal
+    {
+        height: 100px;
+    }
+
 
     section#description #select_localisation .search
     {
@@ -57,14 +70,19 @@
 
     section#most_popular
     {
-        position: absolute;
-        width: 23%;
+        /* position: absolute; */
+        /* width: 23%; */
         height: 620px;
-        left: calc(73% - 20px*2);
+        /* left: calc(73% - 20px*2); */
+
+        order: 1;
+        width: calc(30% - 20px);
+        padding: 20px 40px;
+        margin-left: 20px;
 
         border-radius: 20px;
-        padding: 20px;
-        margin-left: 25px;
+        /* padding: 20px; */
+        /* margin-left: 25px; */
 
         display: flex;
         flex-direction: column;
@@ -75,12 +93,16 @@
 
     section#hebergements
     {
-        position: absolute;
-        width: calc(65% - 35px*2);
+        /* position: absolute; */
+        /* width: calc(65% - 35px*2); */
         height: 620px;
 
-        padding: 20px 35px;
-        margin: 0;
+        width: calc(70% - 20px);
+        margin-right: 20px;
+        padding: 20px 40px;
+
+        /* padding: 20px 35px; */
+        margin: 0 20px 0 0;
 
         background-color: var(--secondary-color);
 
@@ -88,7 +110,8 @@
     }
     section#hebergements .more
     {
-        margin-top: 10px;
+        margin-top: 25px;
+        margin-left: 10px;
     }
     section#hebergements article
     {
@@ -99,6 +122,8 @@
 
         margin-right: 18px;
         margin-bottom: 30px;
+
+        height: 190px;
     }
 
     section#hebergements article .image-rognage-horizontal
@@ -122,7 +147,7 @@
 
     section#activites
     {
-        margin-top: 700px;
+        /* margin-top: 700px; */
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

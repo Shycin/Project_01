@@ -300,7 +300,7 @@ section#most_popular article>.desc>p
     position: relative;
     width: 127px;
     overflow: hidden;
-
+    height: 135px;
     
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;

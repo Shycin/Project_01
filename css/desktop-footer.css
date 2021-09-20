@@ -12,6 +12,8 @@
     footer nav
     {
         display: flex;
+        max-width: 2000px;
+        margin: auto;
     }
 
     footer ul
