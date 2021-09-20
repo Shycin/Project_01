@@ -19,20 +19,24 @@
     }
     header #logo 
     {
-        padding-top: 50px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
     }
     header nav ul li {
-        padding-top: 50px;
+        width: auto;
+        padding: 50px 20px 0 20px;
+        margin: 0 20px; 
     }
     header nav ul li:not(#connection):hover {
-        border-top: 1px solid var(--main-color);
+        border-top: 3px solid var(--main-color);
     }
     header nav ul:not(:hover) li:first-child {
-        border-top: 1px solid var(--main-color);
+        border-top: 3px solid var(--main-color);
     }
     nav ul li input:checked ~ li
     {
-        border-top: 1px solid var(--main-color);
+        border-top: 3px solid var(--main-color);
     }
 
     header nav ul
@@ -43,12 +47,6 @@
     header nav ul li label
     {
         border-bottom: none;
-        min-width: 200px;
-    }
-
-    header nav ul li:not(#connection)
-    {
-        margin-right: 70px;
     }
 
     header nav ul li#connection
